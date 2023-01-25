@@ -70,7 +70,7 @@ class ProductManager {
     }
   }
 
-  //resolve error ENOENT: no such file or directory, open 'products.json'
+
   async readFile() {
     return new Promise((resolve, reject) => {
       fs.readFile(this.path, "utf-8", (err, data) => {

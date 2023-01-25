@@ -32,7 +32,7 @@ app.get("/productos/:products?limit=5", async (req, res) => {
   }
 });
 
-// create a route for the app
+
 app.post("/productos", async (req, res) => {
   try {
     const products = await productManager.getProducts();
@@ -44,7 +44,7 @@ app.post("/productos", async (req, res) => {
   }
 });
 
-//start the server
+
 app.listen(port, () => {
   console.log(`Iniciado en http://localhost:${port}`);
 });
